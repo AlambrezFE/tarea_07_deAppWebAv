@@ -1,0 +1,143 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title LEGO Adventures
+  // Bootstrap
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous')
+  // Font Awesome 5
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous')
+  // Custom style
+  link(rel='stylesheet' type='text/css' href='css/style.css')
+  // Favicon
+  link(rel='icon' href='https://res.cloudinary.com/dfog0e294/image/upload/v1547646298/webdev/Blog/favicon.ico' type='image/x-icon')
+//
+  ============================================
+  ===================== HEADER ===================
+header.shadow-sm
+  // Navbar
+  nav.navbar.navbar-expand-lg.navbar-dark
+    .container
+      img.d-block.mx-auto(src='images/vallesur_logo.png' width='50' draggable='false' alt='Logo')
+      a.navbar-brand.mr-5(href='index.html') | VALLESUR
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      // menu
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='index.html') Home
+          li.nav-item
+            a.nav-link(href='about.html') About me
+          // dropdown menu
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Blog
+            #custom-dropdown-menu.dropdown-menu
+              a.dropdown-item(href='post-01.html')
+                | Depa
+                span.badge.badge-secondary.badge-info.ml-2
+                  | Exclusivo
+              a.dropdown-item(href='post-02.html') cuarto
+              a.dropdown-item(href='post-03.html') vip
+          li.nav-item
+            a.nav-link(href='contact.html') Contact
+      // /menu
+  // /Navbar
+//
+  ============================================
+  ===================== MAIN ===================
+main.py-3.mb-3
+  .container
+    .row
+      // Col-md-6
+      .col-md-6
+        // Google Maps
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.15270489381!2d-73.98024868453376!3d40.75866597932692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fec4f48e93%3A0x1a2ac0c533db6ec2!2sThe+LEGO+Store!5e0!3m2!1sen!2sua!4v1543332341437' height='600' style='width: 100%; border:0' allowfullscreen='')
+      // /col-md-6
+      // Col-md-6
+      .col-md-6
+        // Contact Form
+        h2.display-3
+          | Contactame
+        .mb-1
+          h4
+            i.far.fa-envelope
+            |               Estamos en mantenimiento, pero prueba aver si te contestamos o no xd
+        h5
+          | -----------------------------
+        p.text-muted
+          | Phone: +51 (0) 953 616 696 
+          br
+          |  Email: 
+          a(href='#') feea@mail.com
+        // Input
+        form
+          .row
+            // Name
+            .col-md-6.pb-3
+              input.form-control.input(type='text' name='name' data-form-field='Name' placeholder='Your Name' required='')
+            // Phone
+            .col-md-6.pb-3
+              input.form-control.input(type='tel' name='phone' data-form-field='Phone' placeholder='Phone' required='')
+            // Email
+            .col-md-12.pb-3
+              input.form-control.input(type='email' name='email' data-form-field='Email' placeholder='Email' required='')
+            // Message
+            .col-md-12.pb-3
+              textarea.form-control.input(name='message' rows='3' maxlength='6000' data-form-field='Message' placeholder='Message' style='resize:none')
+            .input-group-btn.col-md-12
+              // <button type="submit" class="btn btn-outline-secondary btn-form display-4">Send Message</button>
+        a.btn.btn-outline-secondary.btn-form.display-4(type='button' href='../public/hola.html')
+      // /col-md-6
+    // /row
+  // /container
+//
+  ============================================
+  ===================== FOOTER ===================
+footer.border-top
+  .container
+    // Logo - About - Contact
+    .row.py-3.text-light
+      // Logo
+      .col-md-4
+        img.img-fluid(src='images/vallesur_logo.png' width='250' draggable='false' alt='Logo')
+      // About
+      .col-md-4
+        h3 About
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien eget mi proin.
+      // Contact me
+      .col-md-4
+        h3 Contact me
+        p
+          | If you are interested in working with me or just want to say hello simply write on email.
+          br
+          strong
+            | Email: 
+            a.text-white(href='#') contact@mail.com
+      // /contact me
+    // /Logo - About - Contact
+    // Social icons
+    p.lead.text-center.text-light FOLLOW ME ON THE WEB
+    .row.mb-3.justify-content-center
+      a(href='https://www.facebook.com' role='button')
+        i.fab.fa-facebook.fa-lg
+      a(href='https://twitter.com' role='button')
+        i.fab.fa-twitter.fa-lg
+      a(href='https://youtube.com' role='button')
+        i.fab.fa-youtube.fa-lg
+      a(href='https://pinterest.com' role='button')
+        i.fab.fa-pinterest-p.fa-lg
+    // Copyright
+    .row.py-3.d-flex.justify-content-center.border-top
+      small.d-block.text-light Copyright &copy; 2025 Rob Smith Blog
+    // /Copyright
+  // /container
+// Bootstrap core JavaScript
+// jQuery.js
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+// Popper.js
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' integrity='sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut' crossorigin='anonymous')
+// Bootstrap.min.js
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' integrity='sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k' crossorigin='anonymous')

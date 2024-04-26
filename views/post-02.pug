@@ -1,0 +1,127 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title LEGO Adventures
+  // Bootstrap
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous')
+  // Font Awesome 5
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous')
+  // Custom style
+  link(rel='stylesheet' type='text/css' href='css/style.css')
+  // Favicon
+  link(rel='icon' href='https://res.cloudinary.com/dfog0e294/image/upload/v1547646298/webdev/Blog/favicon.ico' type='image/x-icon')
+//
+  ============================================
+  ===================== HEADER ===================
+header.shadow-sm
+  // Navbar
+  nav.navbar.navbar-expand-lg.navbar-dark
+    .container
+      img.d-block.mx-auto(src='images/vallesur_logo.png' width='50' draggable='false' alt='Logo')
+      a.navbar-brand.mr-5(href='index.html') | VALLESUR
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      // menu
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='index.html') Home
+          li.nav-item
+            a.nav-link(href='about.html') About me
+          // dropdown menu
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Blog
+            #custom-dropdown-menu.dropdown-menu
+              a.dropdown-item(href='post-01.html')
+                | Depa
+                span.badge.badge-secondary.badge-info.ml-2
+                  | Exclusivo
+              a.dropdown-item(href='post-02.html') cuarto
+              a.dropdown-item(href='post-03.html') vip
+          li.nav-item
+            a.nav-link(href='contact.html') Contact
+      // /menu
+  // /Navbar
+//
+  ============================================
+  ===================== MAIN ===================
+main.py-3.mb-3
+  .container
+    .row
+      // POSTS
+      .col-md-9
+        // Title
+        h2 Cuarto
+        // Author
+        p.lead
+          | Por
+          a(href='#') Defecto del sistema
+        // Date/Time
+        p Posted on May 27, 2023 at 10:30 PM
+        // Preview Image
+        img.img-fluid(src='images/cuartos/Individual.png' alt='Lego Batman')
+        // Post Content
+        p.lead
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis sollicitudin nisl non dignissim. Phasellus hendrerit nisl et massa cursus suscipit. Donec pulvinar diam dolor, sit amet vestibulum purus faucibus posuere. Proin a nunc et felis
+          | aliquam sodales. Suspendisse dapibus ex a nulla faucibus, id venenatis risus facilisis. Nullam non aliquet odio. Phasellus et neque feugiat nunc auctor pretium eu quis magna. Praesent mattis metus vitae ornare hendrerit. Maecenas hendrerit
+          | nibh id commodo rhoncus.
+        p
+          | Vestibulum vehicula quam id quam lobortis convallis. Nullam quis pulvinar dolor. Pellentesque semper bibendum facilisis. Ut vitae interdum tortor. Etiam mattis dui ut dui pharetra, ac auctor ligula rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing
+          | elit. Integer lacus leo, scelerisque id commodo sed, feugiat at mi. Donec quis ex justo.
+        p
+          | In dictum ex orci, vitae ultricies ipsum sagittis et. Nam in risus non mauris dictum consequat ac vitae nisl. Vestibulum sed mauris gravida, rhoncus augue eget, finibus libero. Vivamus vel quam congue, vehicula elit eu, congue nulla. Cras at dui sit amet
+          | nibh pharetra aliquam. Morbi rhoncus metus metus, eget tincidunt libero mollis at. Donec ut sodales diam, quis finibus libero. Vivamus posuere pharetra nibh, nec tempor nulla. Integer vel mauris rhoncus, iaculis augue quis, scelerisque tellus.
+      // /col-md-9
+    // /row
+  // /container
+//
+  ============================================
+  ===================== FOOTER ===================
+footer.border-top
+  .container
+    // Logo - About - Contact
+    .row.py-3.text-light
+      // Logo
+      .col-md-4
+        img.img-fluid(src='images/vallesur_logo.png' width='250' draggable='false' alt='Logo')
+      // About
+      .col-md-4
+        h3 About
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien eget mi proin.
+      // Contact me
+      .col-md-4
+        h3 Contact me
+        p
+          | If you are interested in working with me or just want to say hello simply write on email.
+          br
+          strong
+            | Email: 
+            a.text-white(href='#') contact@mail.com
+      // /contact me
+    // /Logo - About - Contact
+    // Social icons
+    p.lead.text-center.text-light FOLLOW ME ON THE WEB
+    .row.mb-3.justify-content-center
+      a(href='https://www.facebook.com' role='button')
+        i.fab.fa-facebook.fa-lg
+      a(href='https://twitter.com' role='button')
+        i.fab.fa-twitter.fa-lg
+      a(href='https://youtube.com' role='button')
+        i.fab.fa-youtube.fa-lg
+      a(href='https://pinterest.com' role='button')
+        i.fab.fa-pinterest-p.fa-lg
+    // Copyright
+    .row.py-3.d-flex.justify-content-center.border-top
+      small.d-block.text-light Copyright &copy; 2025 Rob Smith Blog
+    // /Copyright
+  // /container
+// Bootstrap core JavaScript
+// jQuery.js
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+// Popper.js
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' integrity='sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut' crossorigin='anonymous')
+// Bootstrap.min.js
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' integrity='sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k' crossorigin='anonymous')

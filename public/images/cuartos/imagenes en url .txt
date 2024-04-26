@@ -1,0 +1,20 @@
+INIDIVDUAL:
+https://cf.bstatic.com/xdata/images/hotel/max1024x768/175140623.jpg?k=3e655598d199a1190fcabd47d24b2dd30458ddf9039f75413f1298b8ac3d5a91&o
+
+DOBLE ESTANDAR:
+https://cf.bstatic.com/xdata/images/hotel/max1024x768/472995121.jpg?k=6443b561d1861bb5397114f8c095ced5e241f61a347fb0bd07054f8ea0484bd9&o
+
+DOBLE SUPERIOR:
+https://cf.bstatic.com/xdata/images/hotel/max1024x768/471228781.jpg?k=39b893177e66096db7ed928d52318b461a436477f7df20d741d421032cd864e5&o
+
+DOBLE:
+https://cf.bstatic.com/xdata/images/hotel/max1024x768/201807649.jpg?k=36be3be9b824983a2055a4c02faf10bc1c8ead3739f6bd7101dba3662a5b79a6&o
+
+TRIPLE:
+https://cf.bstatic.com/xdata/images/hotel/max1024x768/174894878.jpg?k=2dbf06800c1c9a385a5d3b6e46f36938a1506c67bab0c990d995984e9eae516e&o
+
+SUITE QUEEN:
+https://cf.bstatic.com/xdata/images/hotel/max1024x768/201807929.jpg?k=13df935a0179af5773b99698c4207228a3e41fdd482d69e880632509785cdf11&o
+
+SUITE KING:
+https://cf.bstatic.com/xdata/images/hotel/max1024x768/201808125.jpg?k=049c041e72b0933da1c68c55cd6d9bd2d67f1b0cb9072fe26f519c41983e01d2&o
